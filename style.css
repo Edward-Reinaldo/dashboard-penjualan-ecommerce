@@ -1,0 +1,240 @@
+/* Reset dan base styling */
+.main {
+  padding: 1rem 2rem;
+  background-color: #f8fafc;
+}
+
+/* Header styling */
+.main-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+
+.main-header p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* KPI Cards */
+.kpi-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #aa66ea;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.kpi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-title {
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.kpi-value {
+  color: #2d3748;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.kpi-subvalue {
+  color: #718096;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+/* Section headers */
+.section-header {
+  color: #2d3748;
+  padding: 0.5rem 0;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 3px solid #7366ea;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Chart containers */
+.chart-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+  height: 100%;
+}
+
+.chart-title {
+  color: #2d3748;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Status badges */
+.status-completed {
+  background-color: #10B981;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.status-cancelled {
+  background-color: #EF4444;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Sidebar styling */
+.sidebar-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.sidebar-title {
+  color: #2d3748;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Metric value styling */
+div[data-testid="stMetricValue"] {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+  gap: 1rem;
+  background-color: #f1f5f9;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.stTabs [data-baseweb="tab"] {
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.stTabs [aria-selected="true"] {
+  background-color: #667eea;
+  color: white;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Button styling */
+.stButton button {
+  background: linear-gradient(135deg, #d066ea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Data table styling */
+.dataframe {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.dataframe th {
+  background-color: #f1f5f9 !important;
+  color: #2d3748;
+  font-weight: 600;
+  padding: 0.75rem !important;
+}
+
+.dataframe td {
+  padding: 0.5rem !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  color: #718096;
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Grid layout helper */
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  .kpi-value {
+    font-size: 1.5rem;
+  }
+}
+
